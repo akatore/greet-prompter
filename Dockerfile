@@ -1,13 +1,13 @@
 FROM python:3-alpine
+#working dir inside the running container
+WORKDIR /app 
 
-WORKDIR /app #working dir inside the running container
-
-COPY . . # copies the data of application in which this Dockerfile recides to the working directory
+# copies the data of application in which this Dockerfile recides to the working directory
+COPY . . 
 
 EXPOSE 80
 
 CMD ["python", "prompter.py"]
-
 
 # Dokcerfile which make use of base image python3 (alpine) this will provide the environment for our application to run.
 
