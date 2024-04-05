@@ -12,3 +12,6 @@ docker run -p 8000:5000 image_name
 In this command, the application running inside the container on port 5000 is mapped to port 8000 on the Docker host. This allows incoming traffic on port 8000 of the Docker host to be forwarded to port 5000 inside the container.
 
 This port mapping enables running multiple instances of the same application or different applications on the same Docker host, each mapped to a different port to avoid conflicts. By specifying different host ports for each container, multiple containers can coexist on the same host without interference.
+
+Though we can host multiple apps within a single container, only to avoid the potential conflicts between the application that may occur, we follow "one application per container" , this approach promotes modularity, isolation, scalability, and easier management of applications. Each container encapsulates a single application along with its dependencies, ensuring that the application has everything it needs to run consistently regardless of the environment.
+
