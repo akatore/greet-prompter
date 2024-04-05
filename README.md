@@ -5,6 +5,8 @@ A simple py program used to build to a docker image, demonstrating the use case 
 Clone the repo, inside the `greet-prompter` folder, run below command to build the image.
 ```docker build . -t prompter```
 _note that prompter is a image_name you can specify any name_
+<!-- ![image](https://github.com/akatore/greet-prompter/assets/65213016/2af466b8-1ac5-4244-99ae-9d031028554b) -->
+![image](https://github.com/akatore/greet-prompter/assets/65213016/f9ae821a-380c-4ef1-93f7-9cd5863f2ba5)
 
 Check the image if it's build, you can use below command.
 ```docker images```
